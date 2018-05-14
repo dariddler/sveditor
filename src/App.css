@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+ul li { 
+  background: #b0d4e3; /* Old browsers */
+  background: -moz-linear-gradient(top, #b0d4e3 0%, #88bacf 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b0d4e3 0%,#88bacf 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b0d4e3 0%,#88bacf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=0 ); /* IE6-9 */
+  cursor: pointer;
+}
+
+ul li:first-child {
+  background: #b4df5b; /* Old browsers */
+  background: -moz-linear-gradient(top, #b4df5b 0%, #b4df5b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b4df5b 0%,#b4df5b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b4df5b 0%,#b4df5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#b4df5b',GradientType=0 ); /* IE6-9 */
+}
+ul li:nth-child(n+5) {
+  background: #ffaf4b; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffaf4b 0%, #ff920a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+}
+
+.dz {
+  padding: 2px;
+  margin-top: 2px;
+  background-color: #cdcdcd;
+}
+
+.sortItem {
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  border: 1px solid #cdcdcd;
+  margin-bottom: 2px;
+  padding-left: 15px;
+}
+.sortItem .name {
+  float: left;
+  padding-left: 15px;
+  width: 55%;
+}
+.sortItem .date {
+  width: 40%;
+  float: right;
+  padding-right: 15px;
+}
