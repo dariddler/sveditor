@@ -43,14 +43,13 @@ const editor = {
         const { locations } = savedata.SaveGame;
         savedata.SaveGame.player = host;
 
-        
-        if (locations[0].GameLocation[1] & locations[0].GameLocation[1].farmhand) { 
+        if (locations[0].GameLocation[1] && locations[0].GameLocation[1].farmhand && farmhand1) { 
             locations[0].GameLocation[1].farmhand = farmhand1;
         }
-        if (locations[0].GameLocation[1] & locations[0].GameLocation[2].farmhand) {
+        if (locations[0].GameLocation[1] && locations[0].GameLocation[2].farmhand && farmhand2) {
             locations[0].GameLocation[2].farmhand = farmhand2;
         }
-        if (locations[0].GameLocation[1] & locations[0].GameLocation[3].farmhand) {
+        if (locations[0].GameLocation[1] && locations[0].GameLocation[3].farmhand && farmhand3) {
             locations[0].GameLocation[3].farmhand = farmhand3;
         }
 
