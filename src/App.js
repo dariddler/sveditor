@@ -60,7 +60,6 @@ class App extends Component {
 
           // Iterate players to see if we need to show copies
           if (players) {
-            console.log(players.length);
             players.forEach(i => {
               if (statePlayerNames.indexOf(i.name[0]) !== -1) {
                 i.tmpHolder = file.lastModifiedDate;
