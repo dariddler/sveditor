@@ -24,7 +24,7 @@ class App extends Component {
     af.forEach(file => {
       const reader = new FileReader();
       this.setState({ filename: file.name });
-      console.log(file);
+
       reader.onload = () => {
         let xml = reader.result;
         editor.readSave(xml, (err, result) => {
