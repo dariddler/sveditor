@@ -4,6 +4,11 @@ import { find } from 'lodash';
 const editor = {
 
     readSave: (xml, cb) => {
+        if (xml.substring(0, 5) !== '<?xml') {
+            cb('This is not a valid savefile');
+            return;
+        }
+        
         const parser = new Parser({ trim: true });
         parser.parseString(xml.replace("\ufeff", ''), (err, result) => {
             if (err) { 

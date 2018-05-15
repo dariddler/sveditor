@@ -2,20 +2,27 @@
   text-align: center;
 }
 
-.App-header {
+.header {
   background-color: #222;
   height: 50px;
   padding: 20px;
   color: white;
 }
 
-ul {
+ul.helpList li {
+  text-align: left;
+}
+
+ul.playerList {
   list-style-type: none;
   margin: 0;
   padding: 15px;
 }
+ul.playerList li {
+  cursor: pointer;
+}
 
-ul li { 
+ul.playerList li { 
   background: #b0d4e3; /* Old browsers */
   background: -moz-linear-gradient(top, #b0d4e3 0%, #88bacf 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #b0d4e3 0%,#88bacf 100%); /* Chrome10-25,Safari5.1-6 */
@@ -24,14 +31,14 @@ ul li {
   cursor: pointer;
 }
 
-ul li:first-child {
+ul.playerList li:first-child {
   background: #b4df5b; /* Old browsers */
   background: -moz-linear-gradient(top, #b4df5b 0%, #b4df5b 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #b4df5b 0%,#b4df5b 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #b4df5b 0%,#b4df5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#b4df5b',GradientType=0 ); /* IE6-9 */
 }
-ul li:nth-child(n+5) {
+ul.playerList li:nth-child(n+5) {
   background: #ffaf4b; /* Old browsers */
   background: -moz-linear-gradient(top, #ffaf4b 0%, #ff920a 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
@@ -43,6 +50,13 @@ ul li:nth-child(n+5) {
   padding: 2px;
   margin-top: 2px;
   background-color: #cdcdcd;
+  cursor: pointer;
+}
+.dz.dl {
+  cursor: not-allowed;
+}
+.dz.dl.enabled {
+  cursor: pointer !important;
 }
 
 .sortItem {
@@ -62,4 +76,45 @@ ul li:nth-child(n+5) {
   width: 40%;
   float: right;
   padding-right: 15px;
+}
+
+.help {
+  border: 1px dashed #000;
+  background-color: #EEE;
+}
+
+.t {
+  float: left;
+}
+.h {
+  cursor: pointer;
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+  border: 1px solid #88bacf;
+  border-radius: 8px;
+  color: #000;
+  background-color: #b0d4e3;
+}
+.h.active {
+  background-color: #000;
+  color: #b0d4e3;  
+}
+
+p.hostHelp {
+  background-color: #b4df5b;
+  padding: 0 0 0 5px;
+  margin: 0 0 1px 0;
+}
+p.farmhandHelp {
+  background-color: #b0d4e3;
+  padding: 0 0 0 5px;
+  margin: 0 0 1px 0;
+}
+p.duplicateHelp {
+  background-color: #ffaf4b;
+  padding: 0 0 0 5px;
+  margin: 0 0 1px 0;
 }

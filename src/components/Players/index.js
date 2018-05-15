@@ -14,7 +14,7 @@ const SortableItem = SortableElement(({ value }) => {
 
 const SortableList = SortableContainer(({ items }) => {
     return (
-        <ul>
+        <ul className={'playerList'}>
             {items.map((value, index) => {
                 return (
                     <SortableItem key={`item-${index}`} index={index} value={value} />
